@@ -4,34 +4,34 @@ import Imagen from "./santiagoFoto.jpeg";
 import imgProg from "./OIP.jpg";
 import experiencia from "./fotoEstudiando.jpg";
 import educacion from "./fotoOrt.png";
-function App() {
-  return (
-    <div>
-      <header className="header">
-        <h1>Santiago Cañete</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#Sobre mi">Sobre mi</a>
-            </li>
-            <li>
-              <a href="#Conocimientos">Conocimientos</a>
-            </li>
-            <li>
-              <a href="#Experiencia">Experiencia</a>
-            </li>
-            <li>
-              <a href="#Educación">Educación</a>
-            </li>
-            <li>
-              <a href="#Certificaciones">Certificaciones</a>
-            </li>
-            <li>
-              <a href="#Contacto">Contactos</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    function App() {
+      return (
+        <div>
+          <header className="header">
+            <h1>Santiago Cañete</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#Sobre mi">Sobre mi</a>
+                </li>
+                <li>
+                  <a href="#Conocimientos">Conocimientos</a>
+                </li>
+                <li>
+                  <a href="#Experiencia">Experiencia</a>
+                </li>
+                <li>
+                  <a href="#Educación">Educación</a>
+                </li>
+                <li>
+                  <a href="#Certificaciones">Certificaciones</a>
+                </li>
+                <li>
+                  <a href="#Contacto">Contactos</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
       <div id="sobremi">
         <div className="centrador">
           <Seccion className="Sobre mí"></Seccion>
@@ -93,27 +93,28 @@ function App() {
           </div>
 
           <Seccion className="Educación"></Seccion>
-<div class="contenedorEducacion">
-  <img class="imagenEducacion" src={educacion} alt="imagen"></img>
-  <p class="textoEducacion">
-    Durante mi tiempo en la Escuela Ort en la secundaria, desarrollé
-    experiencia en el desarrollo web a través de una serie de tareas que
-    implicaban el uso de C#, HTML, CSS y JavaScript. Desde la creación
-    de aplicaciones de escritorio hasta la implementación de lógica del
-    lado del servidor, tuve la oportunidad de explorar y comprender
-    profundamente C#. Además, en la primaria Scholem, obtuve una sólida
-    base académica que sentó las bases para mi aprendizaje posterior. En
-    Ort, aprendí a estructurar el contenido web y manipular elementos
-    HTML, así como a mejorar el diseño y la apariencia de mis proyectos
-    mediante CSS. Finalmente, implementé interactividad y dinamismo en
-    mis proyectos usando JavaScript. Esta experiencia en desarrollo web,
-    combinada con mi educación en Ort y Scholem, ha sido fundamental en
-    mi desarrollo profesional y me ha preparado para enfrentar desafíos
-    futuros con confianza y habilidad.
-  </p>
-</div>
+            <div class="contenedorEducacion">
+              <img class="imagenEducacion" src={educacion} alt="imagen"></img>
+                <p class="textoEducacion">
+                  Durante mi tiempo en la Escuela Ort en la secundaria, desarrollé
+                  experiencia en el desarrollo web a través de una serie de tareas que
+                  implicaban el uso de C#, HTML, CSS y JavaScript. Desde la creación
+                  de aplicaciones de escritorio hasta la implementación de lógica del
+                  lado del servidor, tuve la oportunidad de explorar y comprender
+                  profundamente C#. Además, en la primaria Scholem, obtuve una sólida
+                  base académica que sentó las bases para mi aprendizaje posterior. En
+                  Ort, aprendí a estructurar el contenido web y manipular elementos
+                  HTML, así como a mejorar el diseño y la apariencia de mis proyectos
+                  mediante CSS. Finalmente, implementé interactividad y dinamismo en
+                  mis proyectos usando JavaScript. Esta experiencia en desarrollo web,
+                  combinada con mi educación en Ort y Scholem, ha sido fundamental en
+                  mi desarrollo profesional y me ha preparado para enfrentar desafíos
+                  futuros con confianza y habilidad.
+                </p>
+              </div>
 
-          <Seccion className="Certificaciones"></Seccion>
+              <Seccion className="Certificaciones"></Seccion>
+           <div className="certificacion-container">
           <p>
             He completado mi educación primaria, obteniendo el certificado
             correspondiente que atestigua mi finalización exitosa de esta etapa
@@ -133,6 +134,8 @@ function App() {
             conocimientos en el ámbito de la tecnología, y estoy emocionado de
             seguir creciendo y aprendiendo en este apasionante campo.
           </p>
+          </div>
+          
 
           <Seccion className="Contacto"></Seccion>
           <p>En caso de querer contactar conmigo ingrese sus datos aqui:</p>

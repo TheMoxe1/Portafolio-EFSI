@@ -1,82 +1,106 @@
-body{
-  padding-top: 5vw;
+/* app.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding-top: 60px; /* Añade espacio para la barra de navegación */
 }
+
+/* app.css */
+/* app.css */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
-  position:fixed;
-  right: 0;
-  left: 0;
-  top: 0;
+  padding-left: 20px; /* Ajuste para dejar espacio en los extremos */
+  padding-right: 20px; /* Ajuste para dejar espacio en los extremos */
+}
 
+ul {
+  list-style-type: none; /* Quitamos los puntos de la lista */
+  margin: 0; /* Quitamos el margen predeterminado */
+  padding: 0; /* Quitamos el relleno predeterminado */
 }
-ul li{
+
+li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px; /* Ajusta el margen entre elementos del menú */
 }
-li a{
+
+li:first-child {
+  margin-left: 0; /* Ajusta el margen izquierdo del primer elemento */
+}
+
+li:last-child {
+  margin-right: 0; /* Elimina el margen del último elemento */
+}
+
+li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
   font-weight: 200;
   font-size: 18px;
 }
+
 li a:hover {
   text-shadow: 0.001px 0 0 white;
 }
 
-h1{
-  font-weight: normal;
+@media screen and (max-width: 600px) {
+  .header {
+    padding-left: 10px; /* Ajuste para dejar espacio en los extremos */
+    padding-right: 10px; /* Ajuste para dejar espacio en los extremos */
+  }
+
+  li {
+    margin-right: 5px; /* Ajusta el margen entre elementos del menú en pantallas pequeñas */
+  }
 }
 
-.header h1{
-  margin-left: -180px;
-}
 
-.header ul{
-  margin-right: -200px;
-}
-
-
-.centrador{
+.centrador {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
 #contenedor {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 #imagenProg {
   width: 1500px;
   height: auto;
-  margin: 100px; 
+  margin: 100px;
 }
 
-#contenedor p{
+#contenedor p {
   margin-left: -20px;
   margin-right: 15px;
 }
 
 #contenedor {
-  text-align: justify; 
+  text-align: justify;
 }
 
 #contenedor p {
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
   line-height: 2.0;
 }
 
-#imagen{
+#imagen {
   width: 300px;
   height: auto;
 }
@@ -87,35 +111,40 @@ h1{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  text-align: justify;  
+  text-align: justify;
 }
 
 #imagenEstudio {
-  width: 35%; 
+  width: 35%;
   margin-left: 70px;
 }
 
 #contenedor1 p {
-  width: 45%; 
-  font-family: Arial, sans-serif; 
+  width: 45%;
+  font-family: Arial, sans-serif;
   line-height: 2.0;
   margin-left: -50px;
   margin-right: 50px;
 }
 
-
-/* Estilos para el formulario */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+.contenedorEducacion {
+  width: 80%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  height: 100vh;
 }
 
+.imagenEducacion {
+  width: 40%;
+}
+
+.textoEducacion {
+  width: 60%;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+/* Estilos para el formulario */
 form {
   background-color: #fff;
   padding: 20px;
@@ -146,34 +175,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
-}
-
-
-/* Estilos para la sección de educación */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.contenedorEducacion {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.imagenEducacion {
-  width: 40%;
-}
-
-.textoEducacion {
-  width: 60%;
-  margin-left: 20px;
-  text-align: justify;
 }
